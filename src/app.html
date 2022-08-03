@@ -1,0 +1,21 @@
+<template>
+	<div class="app slds-p-around_x-large">
+		<h1 class="slds-text-heading_large">Dados do Form Object</h1>
+		<!-- 
+			os names dos campos são importantes manter um padrão, 
+			pois serão usados na key do objeto do lado js.
+		 -->
+
+		<!-- campo nome -->
+		<lightning-input type="text" label="Nome" name="Name" onchange={handleInputChange}></lightning-input>
+		<!-- campo de telefone -->
+		<lightning-input type="phone" label="Telefone" name="Phone" onchange={handleInputChange}></lightning-input>
+		<!-- campo cpf -->
+		<lightning-input type="text" label="Cpf" name="Cpf__c" onchange={handleInputChange}></lightning-input>
+		<!-- campo email -->
+		<lightning-input type="email" label="Email" name="Email" onchange={handleInputChange}></lightning-input>
+
+		<!-- botão -->
+		<lightning-button variant="brand" label="Salvar" class="slds-m-left_x-small"></lightning-button>
+	</div>
+</template>
